@@ -6,6 +6,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.thoughts.wisePage.Pages.EveningDressCatalogPAge;
 import com.thoughts.wisePage.Pages.WelcomePage;
 
 public class testSignIn {
@@ -20,9 +21,12 @@ public class testSignIn {
 	
 	@Test
 	public void dosignIn(){
-		WelcomePage objWelcome = new WelcomePage(driver);
-		objWelcome.signIn();
+		WelcomePage golu = new WelcomePage(driver);
+		golu.searchSel();
+		golu.signIn();
 	}
+	
+
 	
 	@AfterClass
 	public void teatDown(){
